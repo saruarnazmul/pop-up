@@ -15,6 +15,8 @@
   <!-- custom css start -->
   <link rel="stylesheet" href="css/style.css">
   <!-- custom css end -->
+  <!-- handle counter -->
+  <link rel="stylesheet" href="css/handle-counter.min.css">
   <!-- responsive media css start -->
   <link rel="stylesheet" href="css/media.css">
   <!-- responsive media css end -->
@@ -38,211 +40,1017 @@
      </div>
      <!-- category -->
      <div class="list-headline">
-       <ul>
-         <li>Trade-In Prices</li>
-         <li>Webscraping Prices</li>
-         <li>Government Valuations</li>
-         <li>New Cars Prices</li>
-         <li>Past Offers For Similar Cars</li>
-       </ul>
+       <button id="button-1" class="active button1">Trade-In Prices</button>
+       <button id="button-2">Webscraping Prices</button>
+       <button id="button-3">Government Valuations</button>
+       <button id="button-4">New Cars Prices</button>
+       <button id="button-5">Past Offers For Similar Cars</button>
      </div>
      <!-- content with image -->
-     <div class="content">
-       <div class="content-title">
-         <h3>Nissan March 1.6 </h3>
-         <p> Sport MT 2017 40.000 kms</p>
+     <div class="bt-1">
+      <div class="content">
+        <div class="content-title">
+          <h3>Nissan March 1.6 </h3>
+          <p> Sport MT 2017 40.000 kms</p>
+        </div>
+        <div class="right-img">
+          <img src="image/car.png" alt="">
+        </div>
+      </div>
+      <!-- div car record -->
+      <div class="car-record">
+        <div class="min">
+          <p>Mean</p>
+          <h4>$6,500.00</h4>
+        </div>
+        <div class="min">
+         <p>Minimum</p>
+         <h4>$5,800.00</h4>
        </div>
-       <div class="right-img">
-         <img src="image/car.png" alt="">
-       </div>
-     </div>
-     <!-- div car record -->
-     <div class="car-record">
        <div class="min">
-         <p>Mean</p>
-         <h4>$6,500.00</h4>
+         <p>Maximum</p>
+         <h4>$7,000.00</h4>
        </div>
        <div class="min">
-        <p>Minimum</p>
-        <h4>$5,800.00</h4>
+         <p>Records</p>
+         <h4>24</h4>
+       </div>
+       <div class="year">
+         
+         <div class="handle-counter" id="handleCounter">
+           <button class="counter-minus btn btn-primary"><i class="fas fa-caret-left"></i></button>
+           <input type="text" value="2020">
+           <button class="counter-plus btn btn-primary"><i class="fas fa-caret-right"></i></button>
+         </div>
+       </div>
       </div>
-      <div class="min">
-        <p>Maximum</p>
-        <h4>$7,000.00</h4>
+      <div class="table-marked">
+       <label class="container">Filter The Records
+         <input type="checkbox" checked="checked">
+         <span class="checkmark"></span>
+       </label>
       </div>
-      <div class="min">
-        <p>Records</p>
-        <h4>24</h4>
-      </div>
-      <div class="year">
-        <ul>
-          <li><i class="fas fa-caret-left"></i></li>
-          <li class="custom-color">2020</li>
-          <li><i class="fas fa-caret-right"></i></li>
-        </ul>
+      <div class="table-row" style="overflow-x:auto;">
+       <table>
+         <thead>
+           <tr>
+             <th></th>
+             <th>Date</th>
+             <th>marca</th>
+             <th>Model</th>
+             <th>Version</th>
+             <th>Year</th>
+             <th>KM</th>
+             <th>Color</th>
+             <th>Transmission</th>
+             <th>Cylinder</th>
+             <th>Taccoin</th>
+             <th>A/C</th>
+             <th>Tapiz</th>
+             <th>Prices</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td class="td-1">
+               <label class="container">
+               <input id="more-info-1" type="checkbox" >
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-1">01/2020</td>
+             <td class="td-1">nissian</td>
+             <td class="td-1">march</td>
+             <td class="td-1">March Sport Sense 1.6 MT</td>
+             <td class="td-1">2017</td>
+             <td class="td-1">42.000</td>
+             <td class="td-1">mecdnico</td>
+             <td class="td-1">rojo</td>
+             <td class="td-1">1600</td>
+             <td class="td-1">4*2</td>
+             <td class="td-1">SI</td>
+             <td class="td-1">tela</td>
+             <td class="td-1">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-2">
+               <label class="container">
+               <input id="more-info-2" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-2">01/2020</td>
+             <td class="td-2">nissian</td>
+             <td class="td-2">march</td>
+             <td class="td-2">March Sport Sense 1.6 MT</td>
+             <td class="td-2">2017</td>
+             <td class="td-2">42.000</td>
+             <td class="td-2">mecdnico</td>
+             <td class="td-2">rojo</td>
+             <td class="td-2">1600</td>
+             <td class="td-2">4*2</td>
+             <td class="td-2">SI</td>
+             <td class="td-2">tela</td>
+             <td class="td-2">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-3">
+               <label class="container">
+               <input id="more-info-3" type="checkbox" checked="checked">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-3">01/2020</td>
+             <td class="td-3">nissian</td>
+             <td class="td-3">march</td>
+             <td class="td-3">March Sport Sense 1.6 MT</td>
+             <td class="td-3">2017</td>
+             <td class="td-3">42.000</td>
+             <td class="td-3">mecdnico</td>
+             <td class="td-3">rojo</td>
+             <td class="td-3">1600</td>
+             <td class="td-3">4*2</td>
+             <td class="td-3">SI</td>
+             <td class="td-3">tela</td>
+             <td class="td-3">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-4">
+               <label class="container">
+               <input id="more-info-4" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-4">01/2020</td>
+             <td class="td-4">nissian</td>
+             <td class="td-4">march</td>
+             <td class="td-4">March Sport Sense 1.6 MT</td>
+             <td class="td-4">2017</td>
+             <td class="td-4">42.000</td>
+             <td class="td-4">mecdnico</td>
+             <td class="td-4">rojo</td>
+             <td class="td-4">1600</td>
+             <td class="td-4">4*2</td>
+             <td class="td-4">SI</td>
+             <td class="td-4">tela</td>
+             <td class="td-4">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-5">
+               <label class="container">
+               <input id="more-info-5" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-5">01/2020</td>
+             <td class="td-5">nissian</td>
+             <td class="td-5">march</td>
+             <td class="td-5">March Sport Sense 1.6 MT</td>
+             <td class="td-5">2017</td>
+             <td class="td-5">42.000</td>
+             <td class="td-5">mecdnico</td>
+             <td class="td-5">rojo</td>
+             <td class="td-5">1600</td>
+             <td class="td-5">4*2</td>
+             <td class="td-5">SI</td>
+             <td class="td-5">tela</td>
+             <td class="td-5">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-6"><label class="container">
+               <input id="more-info-6" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="reda td-6">01/2020</td>
+             <td class="td-6">nissian</td>
+             <td  class="td-6">march</td>
+             <td class="td-6">March Sport Sense 1.6 MT</td>
+             <td class="td-6">2017</td>
+             <td class="td-6">42.000</td>
+             <td class="td-6">mecdnico</td>
+             <td class="td-6">rojo</td>
+             <td class="td-6">1600</td>
+             <td class="td-6">4*2</td>
+             <td class="td-6">SI</td>
+             <td class="td-6">tela</td>
+             <td class="td-6">$4500.00</td>
+           </tr>
+         </tbody>
+       </table>
       </div>
      </div>
-     <div class="table-marked">
-      <label class="container">Filter The Records
-        <input type="checkbox" checked="checked">
-        <span class="checkmark"></span>
-      </label>
+     <!-- everybutton -->
+     <!-- content with image -->
+     <div class="bt-2">
+      <div class="content">
+        <div class="content-title">
+          <h3>Nissan March 1.6 </h3>
+          <p> Sport MT 2017 40.000 kms</p>
+        </div>
+        <div class="right-img">
+          <img src="image/car.png" alt="">
+        </div>
+      </div>
+      <!-- div car record -->
+      <div class="car-record">
+        <div class="min">
+          <p>Mean</p>
+          <h4>$6,500.00</h4>
+        </div>
+        <div class="min">
+         <p>Minimum</p>
+         <h4>$5,800.00</h4>
+       </div>
+       <div class="min">
+         <p>Maximum</p>
+         <h4>$7,000.00</h4>
+       </div>
+       <div class="min">
+         <p>Records</p>
+         <h4>24</h4>
+       </div>
+       <div class="year">
+         
+         <div class="handle-counter" id="handleCounter">
+           <button class="counter-minus btn btn-primary"><i class="fas fa-caret-left"></i></button>
+           <input type="text" value="2020">
+           <button class="counter-plus btn btn-primary"><i class="fas fa-caret-right"></i></button>
+         </div>
+       </div>
+      </div>
+      <div class="table-marked">
+       <label class="container">Filter The Records
+         <input type="checkbox" checked="checked">
+         <span class="checkmark"></span>
+       </label>
+      </div>
+      <div class="table-row" style="overflow-x:auto;">
+       <table>
+         <thead>
+           <tr>
+             <th></th>
+             <th>Date</th>
+             <th>marca</th>
+             <th>Model</th>
+             <th>Version</th>
+             <th>Year</th>
+             <th>KM</th>
+             <th>Color</th>
+             <th>Transmission</th>
+             <th>Cylinder</th>
+             <th>Taccoin</th>
+             <th>A/C</th>
+             <th>Tapiz</th>
+             <th>Prices</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td class="td-1">
+               <label class="container">
+               <input id="more-info-1" type="checkbox" >
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-1">01/2020</td>
+             <td class="td-1">nissian</td>
+             <td class="td-1">march</td>
+             <td class="td-1">March Sport Sense 1.6 MT</td>
+             <td class="td-1">2017</td>
+             <td class="td-1">42.000</td>
+             <td class="td-1">mecdnico</td>
+             <td class="td-1">rojo</td>
+             <td class="td-1">1600</td>
+             <td class="td-1">4*2</td>
+             <td class="td-1">SI</td>
+             <td class="td-1">tela</td>
+             <td class="td-1">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-2">
+               <label class="container">
+               <input id="more-info-2" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-2">01/2020</td>
+             <td class="td-2">nissian</td>
+             <td class="td-2">march</td>
+             <td class="td-2">March Sport Sense 1.6 MT</td>
+             <td class="td-2">2017</td>
+             <td class="td-2">42.000</td>
+             <td class="td-2">mecdnico</td>
+             <td class="td-2">rojo</td>
+             <td class="td-2">1600</td>
+             <td class="td-2">4*2</td>
+             <td class="td-2">SI</td>
+             <td class="td-2">tela</td>
+             <td class="td-2">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-3">
+               <label class="container">
+               <input id="more-info-3" type="checkbox" checked="checked">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-3">01/2020</td>
+             <td class="td-3">nissian</td>
+             <td class="td-3">march</td>
+             <td class="td-3">March Sport Sense 1.6 MT</td>
+             <td class="td-3">2017</td>
+             <td class="td-3">42.000</td>
+             <td class="td-3">mecdnico</td>
+             <td class="td-3">rojo</td>
+             <td class="td-3">1600</td>
+             <td class="td-3">4*2</td>
+             <td class="td-3">SI</td>
+             <td class="td-3">tela</td>
+             <td class="td-3">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-4">
+               <label class="container">
+               <input id="more-info-4" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-4">01/2020</td>
+             <td class="td-4">nissian</td>
+             <td class="td-4">march</td>
+             <td class="td-4">March Sport Sense 1.6 MT</td>
+             <td class="td-4">2017</td>
+             <td class="td-4">42.000</td>
+             <td class="td-4">mecdnico</td>
+             <td class="td-4">rojo</td>
+             <td class="td-4">1600</td>
+             <td class="td-4">4*2</td>
+             <td class="td-4">SI</td>
+             <td class="td-4">tela</td>
+             <td class="td-4">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-5">
+               <label class="container">
+               <input id="more-info-5" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-5">01/2020</td>
+             <td class="td-5">nissian</td>
+             <td class="td-5">march</td>
+             <td class="td-5">March Sport Sense 1.6 MT</td>
+             <td class="td-5">2017</td>
+             <td class="td-5">42.000</td>
+             <td class="td-5">mecdnico</td>
+             <td class="td-5">rojo</td>
+             <td class="td-5">1600</td>
+             <td class="td-5">4*2</td>
+             <td class="td-5">SI</td>
+             <td class="td-5">tela</td>
+             <td class="td-5">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-6"><label class="container">
+               <input id="more-info-6" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="reda td-6">01/2020</td>
+             <td class="td-6">nissian</td>
+             <td  class="td-6">march</td>
+             <td class="td-6">March Sport Sense 1.6 MT</td>
+             <td class="td-6">2017</td>
+             <td class="td-6">42.000</td>
+             <td class="td-6">mecdnico</td>
+             <td class="td-6">rojo</td>
+             <td class="td-6">1600</td>
+             <td class="td-6">4*2</td>
+             <td class="td-6">SI</td>
+             <td class="td-6">tela</td>
+             <td class="td-6">$4500.00</td>
+           </tr>
+         </tbody>
+       </table>
+      </div>
      </div>
-     <div class="table-row" style="overflow-x:auto;">
-      <table>
-        <thead>
-          <tr>
-            <th></th>
-            <th>Date</th>
-            <th>marca</th>
-            <th>Model</th>
-            <th>Version</th>
-            <th>Year</th>
-            <th>KM</th>
-            <th>Color</th>
-            <th>Transmission</th>
-            <th>Cylinder</th>
-            <th>Taccoin</th>
-            <th>A/C</th>
-            <th>Tapiz</th>
-            <th>Prices</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="td-1">
-              <label class="container">
-              <input id="more-info-1" type="checkbox" >
-              <span class="checkmark"></span>
-            </label></td>
-            <td class="td-1">01/2020</td>
-            <td class="td-1">nissian</td>
-            <td class="td-1">march</td>
-            <td class="td-1">March Sport Sense 1.6 MT</td>
-            <td class="td-1">2017</td>
-            <td class="td-1">42.000</td>
-            <td class="td-1">mecdnico</td>
-            <td class="td-1">rojo</td>
-            <td class="td-1">1600</td>
-            <td class="td-1">4*2</td>
-            <td class="td-1">SI</td>
-            <td class="td-1">tela</td>
-            <td class="td-1">$4500.00</td>
-          </tr>
-          <tr>
-            <td class="td-2">
-              <label class="container">
-              <input id="more-info-2" type="checkbox">
-              <span class="checkmark"></span>
-            </label></td>
-            <td class="td-2">01/2020</td>
-            <td class="td-2">nissian</td>
-            <td class="td-2">march</td>
-            <td class="td-2">March Sport Sense 1.6 MT</td>
-            <td class="td-2">2017</td>
-            <td class="td-2">42.000</td>
-            <td class="td-2">mecdnico</td>
-            <td class="td-2">rojo</td>
-            <td class="td-2">1600</td>
-            <td class="td-2">4*2</td>
-            <td class="td-2">SI</td>
-            <td class="td-2">tela</td>
-            <td class="td-2">$4500.00</td>
-          </tr>
-          <tr>
-            <td class="td-3">
-              <label class="container">
-              <input id="more-info-3" type="checkbox" checked="checked">
-              <span class="checkmark"></span>
-            </label></td>
-            <td class="td-3">01/2020</td>
-            <td class="td-3">nissian</td>
-            <td class="td-3">march</td>
-            <td class="td-3">March Sport Sense 1.6 MT</td>
-            <td class="td-3">2017</td>
-            <td class="td-3">42.000</td>
-            <td class="td-3">mecdnico</td>
-            <td class="td-3">rojo</td>
-            <td class="td-3">1600</td>
-            <td class="td-3">4*2</td>
-            <td class="td-3">SI</td>
-            <td class="td-3">tela</td>
-            <td class="td-3">$4500.00</td>
-          </tr>
-          <tr>
-            <td class="td-4">
-              <label class="container">
-              <input id="more-info-4" type="checkbox">
-              <span class="checkmark"></span>
-            </label></td>
-            <td class="td-4">01/2020</td>
-            <td class="td-4">nissian</td>
-            <td class="td-4">march</td>
-            <td class="td-4">March Sport Sense 1.6 MT</td>
-            <td class="td-4">2017</td>
-            <td class="td-4">42.000</td>
-            <td class="td-4">mecdnico</td>
-            <td class="td-4">rojo</td>
-            <td class="td-4">1600</td>
-            <td class="td-4">4*2</td>
-            <td class="td-4">SI</td>
-            <td class="td-4">tela</td>
-            <td class="td-4">$4500.00</td>
-          </tr>
-          <tr>
-            <td class="td-5">
-              <label class="container">
-              <input id="more-info-5" type="checkbox">
-              <span class="checkmark"></span>
-            </label></td>
-            <td class="td-5">01/2020</td>
-            <td class="td-5">nissian</td>
-            <td class="td-5">march</td>
-            <td class="td-5">March Sport Sense 1.6 MT</td>
-            <td class="td-5">2017</td>
-            <td class="td-5">42.000</td>
-            <td class="td-5">mecdnico</td>
-            <td class="td-5">rojo</td>
-            <td class="td-5">1600</td>
-            <td class="td-5">4*2</td>
-            <td class="td-5">SI</td>
-            <td class="td-5">tela</td>
-            <td class="td-5">$4500.00</td>
-          </tr>
-          <tr>
-            <td class="td-6"><label class="container">
-              <input id="more-info-6" type="checkbox">
-              <span class="checkmark"></span>
-            </label></td>
-            <td class="reda td-6">01/2020</td>
-            <td class="td-6">nissian</td>
-            <td  class="td-6">march</td>
-            <td class="td-6">March Sport Sense 1.6 MT</td>
-            <td class="td-6">2017</td>
-            <td class="td-6">42.000</td>
-            <td class="td-6">mecdnico</td>
-            <td class="td-6">rojo</td>
-            <td class="td-6">1600</td>
-            <td class="td-6">4*2</td>
-            <td class="td-6">SI</td>
-            <td class="td-6">tela</td>
-            <td class="td-6">$4500.00</td>
-          </tr>
-        </tbody>
-      </table>
+     <!-- content with image -->
+     <div class="bt-3">
+      <div class="content">
+        <div class="content-title">
+          <h3>Nissan March 1.6 </h3>
+          <p> Sport MT 2017 40.000 kms</p>
+        </div>
+        <div class="right-img">
+          <img src="image/car.png" alt="">
+        </div>
+      </div>
+      <!-- div car record -->
+      <div class="car-record">
+        <div class="min">
+          <p>Mean</p>
+          <h4>$6,500.00</h4>
+        </div>
+        <div class="min">
+         <p>Minimum</p>
+         <h4>$5,800.00</h4>
+       </div>
+       <div class="min">
+         <p>Maximum</p>
+         <h4>$7,000.00</h4>
+       </div>
+       <div class="min">
+         <p>Records</p>
+         <h4>24</h4>
+       </div>
+       <div class="year">
+         
+         <div class="handle-counter" id="handleCounter">
+           <button class="counter-minus btn btn-primary"><i class="fas fa-caret-left"></i></button>
+           <input type="text" value="2020">
+           <button class="counter-plus btn btn-primary"><i class="fas fa-caret-right"></i></button>
+         </div>
+       </div>
+      </div>
+      <div class="table-marked">
+       <label class="container">Filter The Records
+         <input type="checkbox" checked="checked">
+         <span class="checkmark"></span>
+       </label>
+      </div>
+      <div class="table-row" style="overflow-x:auto;">
+       <table>
+         <thead>
+           <tr>
+             <th></th>
+             <th>Date</th>
+             <th>marca</th>
+             <th>Model</th>
+             <th>Version</th>
+             <th>Year</th>
+             <th>KM</th>
+             <th>Color</th>
+             <th>Transmission</th>
+             <th>Cylinder</th>
+             <th>Taccoin</th>
+             <th>A/C</th>
+             <th>Tapiz</th>
+             <th>Prices</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td class="td-1">
+               <label class="container">
+               <input id="more-info-1" type="checkbox" >
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-1">01/2020</td>
+             <td class="td-1">nissian</td>
+             <td class="td-1">march</td>
+             <td class="td-1">March Sport Sense 1.6 MT</td>
+             <td class="td-1">2017</td>
+             <td class="td-1">42.000</td>
+             <td class="td-1">mecdnico</td>
+             <td class="td-1">rojo</td>
+             <td class="td-1">1600</td>
+             <td class="td-1">4*2</td>
+             <td class="td-1">SI</td>
+             <td class="td-1">tela</td>
+             <td class="td-1">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-2">
+               <label class="container">
+               <input id="more-info-2" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-2">01/2020</td>
+             <td class="td-2">nissian</td>
+             <td class="td-2">march</td>
+             <td class="td-2">March Sport Sense 1.6 MT</td>
+             <td class="td-2">2017</td>
+             <td class="td-2">42.000</td>
+             <td class="td-2">mecdnico</td>
+             <td class="td-2">rojo</td>
+             <td class="td-2">1600</td>
+             <td class="td-2">4*2</td>
+             <td class="td-2">SI</td>
+             <td class="td-2">tela</td>
+             <td class="td-2">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-3">
+               <label class="container">
+               <input id="more-info-3" type="checkbox" checked="checked">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-3">01/2020</td>
+             <td class="td-3">nissian</td>
+             <td class="td-3">march</td>
+             <td class="td-3">March Sport Sense 1.6 MT</td>
+             <td class="td-3">2017</td>
+             <td class="td-3">42.000</td>
+             <td class="td-3">mecdnico</td>
+             <td class="td-3">rojo</td>
+             <td class="td-3">1600</td>
+             <td class="td-3">4*2</td>
+             <td class="td-3">SI</td>
+             <td class="td-3">tela</td>
+             <td class="td-3">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-4">
+               <label class="container">
+               <input id="more-info-4" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-4">01/2020</td>
+             <td class="td-4">nissian</td>
+             <td class="td-4">march</td>
+             <td class="td-4">March Sport Sense 1.6 MT</td>
+             <td class="td-4">2017</td>
+             <td class="td-4">42.000</td>
+             <td class="td-4">mecdnico</td>
+             <td class="td-4">rojo</td>
+             <td class="td-4">1600</td>
+             <td class="td-4">4*2</td>
+             <td class="td-4">SI</td>
+             <td class="td-4">tela</td>
+             <td class="td-4">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-5">
+               <label class="container">
+               <input id="more-info-5" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-5">01/2020</td>
+             <td class="td-5">nissian</td>
+             <td class="td-5">march</td>
+             <td class="td-5">March Sport Sense 1.6 MT</td>
+             <td class="td-5">2017</td>
+             <td class="td-5">42.000</td>
+             <td class="td-5">mecdnico</td>
+             <td class="td-5">rojo</td>
+             <td class="td-5">1600</td>
+             <td class="td-5">4*2</td>
+             <td class="td-5">SI</td>
+             <td class="td-5">tela</td>
+             <td class="td-5">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-6"><label class="container">
+               <input id="more-info-6" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="reda td-6">01/2020</td>
+             <td class="td-6">nissian</td>
+             <td  class="td-6">march</td>
+             <td class="td-6">March Sport Sense 1.6 MT</td>
+             <td class="td-6">2017</td>
+             <td class="td-6">42.000</td>
+             <td class="td-6">mecdnico</td>
+             <td class="td-6">rojo</td>
+             <td class="td-6">1600</td>
+             <td class="td-6">4*2</td>
+             <td class="td-6">SI</td>
+             <td class="td-6">tela</td>
+             <td class="td-6">$4500.00</td>
+           </tr>
+         </tbody>
+       </table>
+      </div>
      </div>
-     
+     <!-- everybutton -->
+          <!-- content with image -->
+          <div class="bt-4">
+            <div class="content">
+              <div class="content-title">
+                <h3>Nissan March 1.6 </h3>
+                <p> Sport MT 2017 40.000 kms</p>
+              </div>
+              <div class="right-img">
+                <img src="image/car.png" alt="">
+              </div>
+            </div>
+            <!-- div car record -->
+            <div class="car-record">
+              <div class="min">
+                <p>Mean</p>
+                <h4>$6,500.00</h4>
+              </div>
+              <div class="min">
+               <p>Minimum</p>
+               <h4>$5,800.00</h4>
+             </div>
+             <div class="min">
+               <p>Maximum</p>
+               <h4>$7,000.00</h4>
+             </div>
+             <div class="min">
+               <p>Records</p>
+               <h4>24</h4>
+             </div>
+             <div class="year">
+               
+               <div class="handle-counter" id="handleCounter">
+                 <button class="counter-minus btn btn-primary"><i class="fas fa-caret-left"></i></button>
+                 <input type="text" value="2020">
+                 <button class="counter-plus btn btn-primary"><i class="fas fa-caret-right"></i></button>
+               </div>
+             </div>
+            </div>
+            <div class="table-marked">
+             <label class="container">Filter The Records
+               <input type="checkbox" checked="checked">
+               <span class="checkmark"></span>
+             </label>
+            </div>
+            <div class="table-row" style="overflow-x:auto;">
+             <table>
+               <thead>
+                 <tr>
+                   <th></th>
+                   <th>Date</th>
+                   <th>marca</th>
+                   <th>Model</th>
+                   <th>Version</th>
+                   <th>Year</th>
+                   <th>KM</th>
+                   <th>Color</th>
+                   <th>Transmission</th>
+                   <th>Cylinder</th>
+                   <th>Taccoin</th>
+                   <th>A/C</th>
+                   <th>Tapiz</th>
+                   <th>Prices</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <td class="td-1">
+                     <label class="container">
+                     <input id="more-info-1" type="checkbox" >
+                     <span class="checkmark"></span>
+                   </label></td>
+                   <td class="td-1">01/2020</td>
+                   <td class="td-1">nissian</td>
+                   <td class="td-1">march</td>
+                   <td class="td-1">March Sport Sense 1.6 MT</td>
+                   <td class="td-1">2017</td>
+                   <td class="td-1">42.000</td>
+                   <td class="td-1">mecdnico</td>
+                   <td class="td-1">rojo</td>
+                   <td class="td-1">1600</td>
+                   <td class="td-1">4*2</td>
+                   <td class="td-1">SI</td>
+                   <td class="td-1">tela</td>
+                   <td class="td-1">$4500.00</td>
+                 </tr>
+                 <tr>
+                   <td class="td-2">
+                     <label class="container">
+                     <input id="more-info-2" type="checkbox">
+                     <span class="checkmark"></span>
+                   </label></td>
+                   <td class="td-2">01/2020</td>
+                   <td class="td-2">nissian</td>
+                   <td class="td-2">march</td>
+                   <td class="td-2">March Sport Sense 1.6 MT</td>
+                   <td class="td-2">2017</td>
+                   <td class="td-2">42.000</td>
+                   <td class="td-2">mecdnico</td>
+                   <td class="td-2">rojo</td>
+                   <td class="td-2">1600</td>
+                   <td class="td-2">4*2</td>
+                   <td class="td-2">SI</td>
+                   <td class="td-2">tela</td>
+                   <td class="td-2">$4500.00</td>
+                 </tr>
+                 <tr>
+                   <td class="td-3">
+                     <label class="container">
+                     <input id="more-info-3" type="checkbox" checked="checked">
+                     <span class="checkmark"></span>
+                   </label></td>
+                   <td class="td-3">01/2020</td>
+                   <td class="td-3">nissian</td>
+                   <td class="td-3">march</td>
+                   <td class="td-3">March Sport Sense 1.6 MT</td>
+                   <td class="td-3">2017</td>
+                   <td class="td-3">42.000</td>
+                   <td class="td-3">mecdnico</td>
+                   <td class="td-3">rojo</td>
+                   <td class="td-3">1600</td>
+                   <td class="td-3">4*2</td>
+                   <td class="td-3">SI</td>
+                   <td class="td-3">tela</td>
+                   <td class="td-3">$4500.00</td>
+                 </tr>
+                 <tr>
+                   <td class="td-4">
+                     <label class="container">
+                     <input id="more-info-4" type="checkbox">
+                     <span class="checkmark"></span>
+                   </label></td>
+                   <td class="td-4">01/2020</td>
+                   <td class="td-4">nissian</td>
+                   <td class="td-4">march</td>
+                   <td class="td-4">March Sport Sense 1.6 MT</td>
+                   <td class="td-4">2017</td>
+                   <td class="td-4">42.000</td>
+                   <td class="td-4">mecdnico</td>
+                   <td class="td-4">rojo</td>
+                   <td class="td-4">1600</td>
+                   <td class="td-4">4*2</td>
+                   <td class="td-4">SI</td>
+                   <td class="td-4">tela</td>
+                   <td class="td-4">$4500.00</td>
+                 </tr>
+                 <tr>
+                   <td class="td-5">
+                     <label class="container">
+                     <input id="more-info-5" type="checkbox">
+                     <span class="checkmark"></span>
+                   </label></td>
+                   <td class="td-5">01/2020</td>
+                   <td class="td-5">nissian</td>
+                   <td class="td-5">march</td>
+                   <td class="td-5">March Sport Sense 1.6 MT</td>
+                   <td class="td-5">2017</td>
+                   <td class="td-5">42.000</td>
+                   <td class="td-5">mecdnico</td>
+                   <td class="td-5">rojo</td>
+                   <td class="td-5">1600</td>
+                   <td class="td-5">4*2</td>
+                   <td class="td-5">SI</td>
+                   <td class="td-5">tela</td>
+                   <td class="td-5">$4500.00</td>
+                 </tr>
+                 <tr>
+                   <td class="td-6"><label class="container">
+                     <input id="more-info-6" type="checkbox">
+                     <span class="checkmark"></span>
+                   </label></td>
+                   <td class="reda td-6">01/2020</td>
+                   <td class="td-6">nissian</td>
+                   <td  class="td-6">march</td>
+                   <td class="td-6">March Sport Sense 1.6 MT</td>
+                   <td class="td-6">2017</td>
+                   <td class="td-6">42.000</td>
+                   <td class="td-6">mecdnico</td>
+                   <td class="td-6">rojo</td>
+                   <td class="td-6">1600</td>
+                   <td class="td-6">4*2</td>
+                   <td class="td-6">SI</td>
+                   <td class="td-6">tela</td>
+                   <td class="td-6">$4500.00</td>
+                 </tr>
+               </tbody>
+             </table>
+            </div>
+           </div>
+           <!-- everybutton -->
+                <!-- content with image -->
+     <div class="bt-5">
+      <div class="content">
+        <div class="content-title">
+          <h3>Nissan March 1.6 </h3>
+          <p> Sport MT 2017 40.000 kms</p>
+        </div>
+        <div class="right-img">
+          <img src="image/car.png" alt="">
+        </div>
+      </div>
+      <!-- div car record -->
+      <div class="car-record">
+        <div class="min">
+          <p>Mean</p>
+          <h4>$6,500.00</h4>
+        </div>
+        <div class="min">
+         <p>Minimum</p>
+         <h4>$5,800.00</h4>
+       </div>
+       <div class="min">
+         <p>Maximum</p>
+         <h4>$7,000.00</h4>
+       </div>
+       <div class="min">
+         <p>Records</p>
+         <h4>24</h4>
+       </div>
+       <div class="year">
+         
+         <div class="handle-counter" id="handleCounter">
+           <button class="counter-minus btn btn-primary"><i class="fas fa-caret-left"></i></button>
+           <input type="text" value="2020">
+           <button class="counter-plus btn btn-primary"><i class="fas fa-caret-right"></i></button>
+         </div>
+       </div>
+      </div>
+      <div class="table-marked">
+       <label class="container">Filter The Records
+         <input type="checkbox" checked="checked">
+         <span class="checkmark"></span>
+       </label>
+      </div>
+      <div class="table-row" style="overflow-x:auto;">
+       <table>
+         <thead>
+           <tr>
+             <th></th>
+             <th>Date</th>
+             <th>marca</th>
+             <th>Model</th>
+             <th>Version</th>
+             <th>Year</th>
+             <th>KM</th>
+             <th>Color</th>
+             <th>Transmission</th>
+             <th>Cylinder</th>
+             <th>Taccoin</th>
+             <th>A/C</th>
+             <th>Tapiz</th>
+             <th>Prices</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td class="td-1">
+               <label class="container">
+               <input id="more-info-1" type="checkbox" >
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-1">01/2020</td>
+             <td class="td-1">nissian</td>
+             <td class="td-1">march</td>
+             <td class="td-1">March Sport Sense 1.6 MT</td>
+             <td class="td-1">2017</td>
+             <td class="td-1">42.000</td>
+             <td class="td-1">mecdnico</td>
+             <td class="td-1">rojo</td>
+             <td class="td-1">1600</td>
+             <td class="td-1">4*2</td>
+             <td class="td-1">SI</td>
+             <td class="td-1">tela</td>
+             <td class="td-1">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-2">
+               <label class="container">
+               <input id="more-info-2" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-2">01/2020</td>
+             <td class="td-2">nissian</td>
+             <td class="td-2">march</td>
+             <td class="td-2">March Sport Sense 1.6 MT</td>
+             <td class="td-2">2017</td>
+             <td class="td-2">42.000</td>
+             <td class="td-2">mecdnico</td>
+             <td class="td-2">rojo</td>
+             <td class="td-2">1600</td>
+             <td class="td-2">4*2</td>
+             <td class="td-2">SI</td>
+             <td class="td-2">tela</td>
+             <td class="td-2">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-3">
+               <label class="container">
+               <input id="more-info-3" type="checkbox" checked="checked">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-3">01/2020</td>
+             <td class="td-3">nissian</td>
+             <td class="td-3">march</td>
+             <td class="td-3">March Sport Sense 1.6 MT</td>
+             <td class="td-3">2017</td>
+             <td class="td-3">42.000</td>
+             <td class="td-3">mecdnico</td>
+             <td class="td-3">rojo</td>
+             <td class="td-3">1600</td>
+             <td class="td-3">4*2</td>
+             <td class="td-3">SI</td>
+             <td class="td-3">tela</td>
+             <td class="td-3">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-4">
+               <label class="container">
+               <input id="more-info-4" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-4">01/2020</td>
+             <td class="td-4">nissian</td>
+             <td class="td-4">march</td>
+             <td class="td-4">March Sport Sense 1.6 MT</td>
+             <td class="td-4">2017</td>
+             <td class="td-4">42.000</td>
+             <td class="td-4">mecdnico</td>
+             <td class="td-4">rojo</td>
+             <td class="td-4">1600</td>
+             <td class="td-4">4*2</td>
+             <td class="td-4">SI</td>
+             <td class="td-4">tela</td>
+             <td class="td-4">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-5">
+               <label class="container">
+               <input id="more-info-5" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="td-5">01/2020</td>
+             <td class="td-5">nissian</td>
+             <td class="td-5">march</td>
+             <td class="td-5">March Sport Sense 1.6 MT</td>
+             <td class="td-5">2017</td>
+             <td class="td-5">42.000</td>
+             <td class="td-5">mecdnico</td>
+             <td class="td-5">rojo</td>
+             <td class="td-5">1600</td>
+             <td class="td-5">4*2</td>
+             <td class="td-5">SI</td>
+             <td class="td-5">tela</td>
+             <td class="td-5">$4500.00</td>
+           </tr>
+           <tr>
+             <td class="td-6"><label class="container">
+               <input id="more-info-6" type="checkbox">
+               <span class="checkmark"></span>
+             </label></td>
+             <td class="reda td-6">01/2020</td>
+             <td class="td-6">nissian</td>
+             <td  class="td-6">march</td>
+             <td class="td-6">March Sport Sense 1.6 MT</td>
+             <td class="td-6">2017</td>
+             <td class="td-6">42.000</td>
+             <td class="td-6">mecdnico</td>
+             <td class="td-6">rojo</td>
+             <td class="td-6">1600</td>
+             <td class="td-6">4*2</td>
+             <td class="td-6">SI</td>
+             <td class="td-6">tela</td>
+             <td class="td-6">$4500.00</td>
+           </tr>
+         </tbody>
+       </table>
+      </div>
+     </div>
+     <!-- everybutton -->
+
+
+
    </div>
-   
-
-
  </section>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/handleCounter.js"></script>
 <script src="js/script.js"></script>
 <script>
+$(document).ready(function() {
+  $('#button-1').click(function() {
+    $('.bt-1').slideToggle("slow");
+    $('.bt-2').css('display','none');
+    $('.bt-3').css('display','none');
+    $('.bt-4').css('display','none');
+    $('.bt-5').css('display','none');
+  });
+  $('#button-2').click(function() {
+    $('.bt-2').slideToggle("slow");
+    $('.bt-1').css('display','none');
+    $('.bt-3').css('display','none');
+    $('.bt-4').css('display','none');
+    $('.bt-5').css('display','none');
+  });
+  $('#button-3').click(function() {
+    $('.bt-3').slideToggle("slow");
+    $('.bt-1').css('display','none');
+    $('.bt-2').css('display','none');
+    $('.bt-4').css('display','none');
+    $('.bt-5').css('display','none');
+  });
+  $('#button-4').click(function() {
+    $('.bt-4').slideToggle("slow");
+    $('.bt-1').css('display','none');
+    $('.bt-2').css('display','none');
+    $('.bt-3').css('display','none');
+    $('.bt-5').css('display','none');
+  });
+  $('#button-5').click(function() {
+    $('.bt-5').slideToggle("slow");
+    $('.bt-1').css('display','none');
+    $('.bt-2').css('display','none');
+    $('.bt-3').css('display','none');
+    $('.bt-4').css('display','none');
+  });
+
+
+
+
+});
+
+
+
+
+
+
+  $('#handleCounter').handleCounter()
+
   // checkbox
  $('#more-info-1').change(function() {
     if(this.checked != true){
@@ -303,7 +1111,7 @@
     $(".td-6").css("background-color", "#217791");
   }
 });
-
+// 
 
 </script>
 </body>

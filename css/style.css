@@ -24,6 +24,7 @@
     top: 35px;
     right: 35px;
     font-size: 20px;
+    cursor: pointer;
 }
 .logo{
     text-align: left;
@@ -45,35 +46,58 @@
 .list-headline{
     
 }
-.list-headline, ul{
+.list-headline{
     width: 100%;
     list-style: none;
     padding-inline-start:0;
     display:flex;
     justify-content: space-around;
 }
-.list-headline ul li{
-    display: inline-block;
+button{
+    min-width: 20%;
     padding: 10px 28px;
     background-color: #0e4655;
     color: #fff;
     text-transform: uppercase;
     margin: 0 !important;
+    border: 0;
     border-right: 2px solid #fff;
+    transition: 0.4s;
+    font-weight: 700;
 }
-.list-headline ul li:last-child{
-    
-    border-right:#fff;
+button:last-child{
+    border-right: 0px;
+}
+.active{
+    background-color: #00acfc !important;
+}
+button:hover{
+    background-color: #00acfc;
+    border-right: 0;
+}
+.counter-minus, .counter-plus{
+    background-color: #05252c !important;
+    padding: 10px 20px !important;
+    min-height: 30px;
+    font-size: 20px;
+}
+.handle-counter input {
+    background-color: #217791;
+    color: #fff;
+    border: 0;
+    min-height: 33px;
+    font-size: 20px;
 }
 .content{
    display: flex;
+   margin-top: 35px;
 }
 .content-title::after{
     content: '';
     margin-top: 20px;
     width: 30%;
     height: 3px;
-    background-color: #fff;
+    background-color: #fff; 
     position: absolute;
 }
 .content-title{
@@ -133,6 +157,7 @@
 /* year */
 .year{
     margin-left: 130px;
+    margin-top: 20px;
 
 }
 .year ul{
@@ -263,4 +288,8 @@ and also iPads specifically.
 }
 table tr {
     border-bottom: 4px solid;
+}
+
+.bt-2, .bt-3, .bt-4, .bt-5, .bt-6{
+    display: none;
 }
